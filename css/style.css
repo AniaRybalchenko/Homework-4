@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  height: 100%;
+  background: url(../img/sea.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+.wrapper {
+  width: 800px;
+  height: 100%;
+  margin: 20px auto;
+  padding: 60px 45px 60px 45px;
+  background-color: #fff;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #2f4f4f;
+}
+
+h3 {
+  padding-top: 15px;
+  color: #2f4f3f;
+}
+
+img {
+  width: 300px;
+  float: left;
+  margin: 15px 15px 5px 0px;
+}
+
+.block1 {
+  display: inline-block;
+  width: 550px;
+}
+
+.block2 {
+  display: inline-block;
+  width: 200px;
+}
+
+.list1 li::before {
+  content: "1";
+  width: 28px;
+  height: 28px;
+  left: -35px;
+  bottom: 50px;
+  text-align: center;
+  color: snow;
+  position: absolute;
+  background-color: #2f4f3f;
+  border-radius: 28px;
+}
+
+.list1 li:nth-child(2)::before {
+  content: "2";
+}
+
+.list1 li:nth-child(3)::before {
+  content: "3";
+}
+
+.list1 li {
+  position: relative;
+  list-style: none;
+}
+
+div.bottom {
+  border-bottom: 1px solid #d3d3d3;
+  padding-top: 30px;
+}
+
+.block3 {
+  width: 530px;
+  display: inline-block;
+  padding-top: 30px;
+}
+
+.list2 li {
+  display: inline-block;
+  width: 40%;
+  padding: -20px;
+}
+
+.list2 li::before {
+  content: '\2192';
+  padding-right: 20px;
+  position: absolute;
+  padding: 20px;
+  margin: 15px 0px 15px -35px;
+}
+
+.block4 {
+  display: inline-block;
+  margin: 40px;
+  vertical-align: top;
+}
+
+.frame h3 {
+  width: 180px;
+  height: 180px;
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: #fffff0;
+}
+
+.frame h3::after {
+  content: "\0022	";
+}
+
+.frame h3::before {
+  content: "\0022	";
+}
+
+.mark {
+  text-align: center;
+}
+
+.frame::after
+.frame::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+}
+
+.frame::before {
+  border-top: 22px solid #fffff0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  bottom: -22px;
+  left: 84px;
+}
+
+.frame::after {
+  border-top: 20px solid #000;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  bottom: -20px;
+  left: 86px;
+}
